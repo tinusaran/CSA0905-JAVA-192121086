@@ -9,23 +9,23 @@ System.out.println("1.For String Palindrome");
 System.out.println("2.For number palindrome");
 System.out.println("Enter your choice :");
 ch=s.nextInt();
+s.nextLine();
 switch(ch){
 case 1:
 int len,i;
 String s1=new String();
 String s2=new String();
-String org=new String();
 System.out.print("Enter a String = ");
 s1=s.nextLine();
+String original=s1;
 len=s1.length();
 for(i=len-1;i>=0;i--){
 s2=s2+s1.charAt(i);}
 System.out.println("Reversed String = "+s2);
-org=s1;
-if(org.equals(s2)){
-System.out.println("Entered String is in palindrome");}
+if(s2.equals(original)){
+System.out.println("It is a Palindrome.");}
 else{
-System.out.println("Not a Palindrome");}
+System.out.println("Not a Palindrome.");}
 break;
 case 2:
 int n,n1,rem,rev=0;
